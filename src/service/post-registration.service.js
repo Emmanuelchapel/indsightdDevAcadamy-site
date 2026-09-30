@@ -1,6 +1,5 @@
 // service function for registration
-const baseUrl = 'http://127.0.0.1:8000'
-
+const baseUrl = import.meta.env.VITE_BASE_URL
 export const register = async (full_name, email, phone_number) => {
 
     const payLoad = {
