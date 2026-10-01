@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ThemeDiv from "../components/ThemeDiv";
 import { useFrom } from "../context/FormContext";
 import { useModal } from "../context/modalContext";
@@ -10,7 +10,7 @@ import OverLay from "../ui/OverLay";
 import RegisterForm from "../ui/RegisterForm";
 
 const HeroSection = () => {
-    const { isModalOpen, openModal, closeModal } = useModal();
+    const { isModalOpen, openModal, closeModal} = useModal();
     const showInviteModal = isModalOpen("Register");
     const { form } = useFrom()
     const { showToast } = useToast();

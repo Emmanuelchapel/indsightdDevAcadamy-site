@@ -1,5 +1,5 @@
 import './App.css'
-import NavBar from './components/NavBar'
+import NavBar from "./components/Navbar";
 import AboutSection from './features/AboutSection'
 import CourseSection from './features/CourseSection'
 import FooterSection from './features/Footer'

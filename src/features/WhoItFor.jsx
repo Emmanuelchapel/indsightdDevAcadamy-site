@@ -1,4 +1,4 @@
-import CourseCardContant from "../components/courseCardContent";
+import CourseCardContant from '../components/CourseCardContent';
 import { whoItFor} from "../data/data";
 import ThemeCard from "../ui/ThemeCard";
 
