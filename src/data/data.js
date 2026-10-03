@@ -88,7 +88,7 @@ export const FQAData = [
     {
         id:1,
         question:'Do i need prior coding experience?',
-        answer:'No you do not have ading experience to enroll in this bootcamp'
+        answer:'No you do not need to have any experience to enroll in this bootcamp'
     },
 
     {  
@@ -100,7 +100,7 @@ export const FQAData = [
     {  
         id:3,
         question:'How long is the bootcamp ',
-        answer:'2 months'
+        answer:' the bootcamp will take two month'
     }
 ]
 

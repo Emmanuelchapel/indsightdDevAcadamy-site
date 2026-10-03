@@ -2,14 +2,12 @@ import ThemeCard from "../ui/ThemeCard";
 import { scheduleCards } from "../data/data";
 import SheduleCardContent from "../components/ScheduleCardContent";
 import Button from "../ui/Button";
-import { useModal } from "../context/modalContext";
-
+import { useModal } from "../context/ModalContext";
 
 const ScheduleSection = () => {
   // call in the modal hook
-  const {openModal} =useModal()
+  const { openModal } = useModal();
   return (
-    
     <>
       <section id="Schedule" className="p-[10px] sm:p-[100px] flex flex-col">
         {/* container */}
@@ -45,7 +43,7 @@ const ScheduleSection = () => {
 
               <div className="flex gap-5 p-[50px]">
                 <Button
-                  onClick={()=>openModal("Register")}
+                  onClick={() => openModal("Register")}
                   Title="Reserve Your Spot"
                   className={
                     "bg-(--color-brand-500) rounded-[3px] font-semibold text-white w-[200px] translate-x-[-66px] sm:translate-x-0 "

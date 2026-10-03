@@ -62,7 +62,7 @@ const NavBar = () => {
               text-white
             `}
           >
-            InsighDevAcadamy
+            Insight<b className="text-accent">Dev</b>Acadamy
           </div>
 
           {/* Desktop + Mobile Navigation */}

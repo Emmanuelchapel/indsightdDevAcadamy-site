@@ -2,7 +2,7 @@ import InputField from "./InputField";
 import Button from "../ui/Button";
 import { useEffect, useState } from "react";
 import { useFrom } from "../context/FormContext";
-const RegisterForm = ({ name, submit, isLoading }) => {
+const RegisterForm = ({ name, submit, isLoading ,  validationError }) => {
   // state hold inputs form the input component
   const [email, setemail] = useState("");
   const [fullName, setFullName] = useState("");
@@ -56,14 +56,17 @@ const RegisterForm = ({ name, submit, isLoading }) => {
                 type="number"
                 placeholder="Enter your phone number"
               />
+                 {/* validation error */}
+             <p className="min-h-[20px] text-red-500 text-[14px]">{validationError}</p>
             </div>
+           
 
             <div className="flex gap-5">
               <Button
                onClick={()=>submit()}
-                Title={isLoading?"Submiting...": "Submite"}
+                Title={isLoading?"Submiting...": "Submit"}
                 className={
-                  "bg-(--color-brand-500) sm:w-[300px] rounded-[10px] font-semibold text-white w-[200px] translate-x-[-6px] sm:translate-x-0 "
+                  "bg-(--color-brand-500) sm:w-[300px] rounded-[10px] font-semibold text-white w-[200px] translate-x-[-6px] translate-y-[-40px]   sm:translate-x-0 "
                 }
               />
             </div>

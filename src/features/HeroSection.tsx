@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ThemeDiv from "../components/ThemeDiv";
 import { useFrom } from "../context/FormContext";
-import { useModal } from "../context/modalContext";
+import { useModal } from "../context/ModalContext";
 import { useToast } from "../context/ToastContext";
 import { register } from "../service/post-registration.service";
 import Button from "../ui/Button";
@@ -10,12 +10,13 @@ import OverLay from "../ui/OverLay";
 import RegisterForm from "../ui/RegisterForm";
 
 const HeroSection = () => {
-    const { isModalOpen, openModal, closeModal} = useModal();
+    const { isModalOpen, openModal, closeModal } = useModal();
     const showInviteModal = isModalOpen("Register");
     const { form } = useFrom()
     const { showToast } = useToast();
     //  state to handle loading
     const [isLoading, setIsLoading] = useState(false);
+    const[validationError, setValidationError] = useState<string | null>(null)
 
 
     // handle form registration 
@@ -23,6 +24,15 @@ const HeroSection = () => {
 
         // call the register function
         const register_user = async (full_name, email, phone_number) => {
+            setValidationError(null);
+
+            // check if argument is empty
+            if(!full_name || !email || !phone_number) {
+                // update state with a vaildation error
+                setValidationError('All fields must be filled')
+                return ;
+            }
+
             setIsLoading(true)
             try {
                 const response = await register(full_name, email, phone_number);
@@ -34,7 +44,8 @@ const HeroSection = () => {
 
                 }
             } finally {
-               setIsLoading(false)
+                setIsLoading(false)
+                setValidationError(null)
             }
         }
 
@@ -50,7 +61,7 @@ const HeroSection = () => {
                 {showInviteModal && (
                     <OverLay>
                         <Modal modal={'Register'}>
-                            <RegisterForm name={'Register'} submit={handelSubmite} isLoading={isLoading} />
+                            <RegisterForm validationError={validationError} name={'Register'} submit={handelSubmite} isLoading={isLoading} />
                         </Modal>
                     </OverLay>
                 )}

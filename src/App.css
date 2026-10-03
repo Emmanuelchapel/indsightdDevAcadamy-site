@@ -8,12 +8,12 @@
 
 @theme {
   /* ---------- Brand: Red ---------- */
-  --color-brand-50:  #fff1f1;
+  --color-brand-50: #fff1f1;
   --color-brand-100: #ffe0e0;
   --color-brand-200: #fecaca;
   --color-brand-300: #fe9a9a;
   --color-brand-400: #fd6a6a;
-  --color-brand-500: #fd3636;  /* primary brand red */
+  --color-brand-500: #fd3636; /* primary brand red */
   --color-brand-600: #e81f1f;
   --color-brand-700: #c11616;
   --color-brand-800: #8f1010;
@@ -21,120 +21,99 @@
   --color-overlay-bg: #00000033;
 
   /* ---------- Neutrals ---------- */
-  --color-greyscale-0:    #ffffff;
-  --color-greyscale-50:   #fafafb;
-  --color-greyscale-100:  #ededf0;  /* Light Grey — official */
-  --color-greyscale-200:  #e8e9f0;
-  --color-greyscale-300:  #c3c5cb;
-  --color-greyscale-400:  #97979b;
-  --color-greyscale-500:  #6c6c71;
-  --color-greyscale-600:  #56565c;
-  --color-greyscale-700:  #373b4d;
-  --color-greyscale-800:  #2c2c30;
-  --color-greyscale-900:  #232325;
-  --color-greyscale-950:  #19191d;  /* Dark Grey — official */
+  --color-greyscale-0: #ffffff;
+  --color-greyscale-50: #fafafb;
+  --color-greyscale-100: #ededf0; /* Light Grey — official */
+  --color-greyscale-200: #e8e9f0;
+  --color-greyscale-300: #c3c5cb;
+  --color-greyscale-400: #97979b;
+  --color-greyscale-500: #6c6c71;
+  --color-greyscale-600: #56565c;
+  --color-greyscale-700: #373b4d;
+  --color-greyscale-800: #2c2c30;
+  --color-greyscale-900: #232325;
+  --color-greyscale-950: #19191d; /* Dark Grey — official */
   --color-greyscale-1000: #131315;
 
   /* ---------- Status ---------- */
   --color-success: #10b981;
   --color-warning: #f59e0b;
-  --color-danger:  #b3261e;  /* deeper than brand-500 so errors stay readable against it */
-  --color-info:    #6c6ce5;
+  --color-danger: #b3261e; /* deeper than brand-500 so errors stay readable against it */
+  --color-info: #6c6ce5;
 
   /* ---------- Typography ---------- */
-  --font-display: "Aeonik Pro", "Inter", ui-sans-serif, system-ui, -apple-system,
-                  "Segoe UI", Roboto, sans-serif;
-  --font-sans:    "Inter", ui-sans-serif, system-ui, -apple-system,
-                  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono:    "Aeonik Fono", "JetBrains Mono", ui-monospace, SFMono-Regular,
-                  Menlo, Monaco, Consolas, monospace;
+  --font-display:
+    "Aeonik Pro", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono:
+    "Aeonik Fono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
 
-  --text-xs:   0.75rem;    /* 12px */
-  --text-sm:   0.875rem;   /* 14px */
-  --text-base: 1rem;       /* 16px */
-  --text-lg:   1.125rem;   /* 18px */
-  --text-xl:   1.25rem;    /* 20px */
-  --text-2xl:  1.5rem;     /* 24px */
-  --text-3xl:  1.875rem;   /* 30px */
-  --text-4xl:  2.5rem;     /* 40px */
-  --text-5xl:  3.25rem;    /* 52px */
-  --text-6xl:  4.5rem;     /* 72px — hero */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.5rem; /* 40px */
+  --text-5xl: 3.25rem; /* 52px */
+  --text-6xl: 4.5rem; /* 72px — hero */
 
-  --tracking-tighter: -0.04em;  /* big display headings */
-  --tracking-tight:   -0.02em;
-  --tracking-normal:  0em;
+  --tracking-tighter: -0.04em; /* big display headings */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
 
-  --radius-sm:  0.25rem;
-  --radius-md:  0.5rem;
-  --radius-lg:  0.75rem;
-  --radius-xl:  1rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 
   /* ---------- Semantic tokens (light mode defaults) ---------- */
-  --color-bg:            var(--color-greyscale-0);
-  --color-bg-subtle:     var(--color-greyscale-50);
-  --color-surface:       var(--color-greyscale-0);
+  --color-bg: var(--color-greyscale-0);
+  --color-bg-subtle: var(--color-greyscale-50);
+  --color-surface: var(--color-greyscale-0);
   --color-surface-muted: var(--color-greyscale-100);
-  --color-border:        var(--color-greyscale-200);
+  --color-border: var(--color-greyscale-200);
   --color-border-strong: var(--color-greyscale-300);
-  --color-fg:            var(--color-greyscale-950);
-  --color-fg-muted:      var(--color-greyscale-600);
-  --color-fg-subtle:     var(--color-greyscale-400);
-  --color-accent:        var(--color-brand-500);
-  --color-accent-hover:  var(--color-brand-600);
-  --color-on-accent:     var(--color-greyscale-0);
+  --color-fg: var(--color-greyscale-950);
+  --color-fg-muted: var(--color-greyscale-600);
+  --color-fg-subtle: var(--color-greyscale-400);
+  --color-accent: var(--color-brand-500);
+  --color-accent-hover: var(--color-brand-600);
+  --color-on-accent: var(--color-greyscale-0);
 
   /* ---------- Liquid glass ---------- */
-  --glass-blur-sm:  8px;
-  --glass-blur-md:  16px;
-  --glass-blur-lg:  28px;
+  --glass-blur-sm: 8px;
+  --glass-blur-md: 16px;
+  --glass-blur-lg: 28px;
   --glass-saturate: 180%;
 
-  --glass-bg-light:        rgba(255, 255, 255, 0.55);
+  --glass-bg-light: rgba(255, 255, 255, 0.55);
   --glass-bg-light-strong: rgba(255, 255, 255, 0.75);
-  --glass-border-light:    rgba(255, 255, 255, 0.6);
+  --glass-border-light: rgba(255, 255, 255, 0.6);
   --glass-highlight-light: rgba(255, 255, 255, 0.9);
-  --glass-shadow-light:    rgba(20, 20, 30, 0.12);
+  --glass-shadow-light: rgba(20, 20, 30, 0.12);
 
-  --glass-bg-dark:        rgba(35, 35, 37, 0.45);
+  --glass-bg-dark: rgba(35, 35, 37, 0.45);
   --glass-bg-dark-strong: rgba(35, 35, 37, 0.65);
-  --glass-border-dark:    rgba(255, 255, 255, 0.12);
+  --glass-border-dark: rgba(255, 255, 255, 0.12);
   --glass-highlight-dark: rgba(255, 255, 255, 0.16);
-  --glass-shadow-dark:    rgba(0, 0, 0, 0.45);
+  --glass-shadow-dark: rgba(0, 0, 0, 0.45);
 
   /* active values — flipped by .dark below */
-  --glass-bg:        var(--glass-bg-light);
+  --glass-bg: var(--glass-bg-light);
   --glass-bg-strong: var(--glass-bg-light-strong);
-  --glass-border:    var(--glass-border-light);
+  --glass-border: var(--glass-border-light);
   --glass-highlight: var(--glass-highlight-light);
-  --glass-shadow:    var(--glass-shadow-light);
+  --glass-shadow: var(--glass-shadow-light);
 }
 
-/* ---------- Dark mode overrides ---------- */
-@custom-variant dark (&:where(.dark, .dark *));
-
-.dark {
-  --color-bg:            var(--color-greyscale-950);  /* #19191d */
-  --color-bg-subtle:     var(--color-greyscale-1000);
-  --color-surface:       var(--color-greyscale-900);
-  --color-surface-muted: var(--color-greyscale-800);
-  --color-border:        var(--color-greyscale-800);
-  --color-border-strong: var(--color-greyscale-700);
-  --color-fg:            var(--color-greyscale-100); /* #ededf0 */
-  --color-fg-muted:      var(--color-greyscale-400);
-  --color-fg-subtle:     var(--color-greyscale-500);
-  --color-accent:        var(--color-brand-500);
-  --color-accent-hover:  var(--color-brand-400);
-  --color-on-accent:     var(--color-greyscale-0);
-
-  --glass-bg:        var(--glass-bg-dark);
-  --glass-bg-strong: var(--glass-bg-dark-strong);
-  --glass-border:    var(--glass-border-dark);
-  --glass-highlight: var(--glass-highlight-dark);
-  --glass-shadow:    var(--glass-shadow-dark);
-}
-
-/* Optional: follow the OS setting instead of a .dark class */
+/* Optional: follow the OS setting instead of a .dark class
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     --color-bg:            var(--color-greyscale-950);
@@ -154,7 +133,7 @@
     --glass-highlight: var(--glass-highlight-dark);
     --glass-shadow:    var(--glass-shadow-dark);
   }
-}
+} */
 
 /* ---------- Base ---------- */
 @layer base {
@@ -165,15 +144,22 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: var(--tracking-tight);
     line-height: 1.1;
   }
 
-  h1 { letter-spacing: var(--tracking-tighter); }
+  h1 {
+    letter-spacing: var(--tracking-tighter);
+  }
 
-  code, pre, kbd {
+  code,
+  pre,
+  kbd {
     font-family: var(--font-mono);
   }
 }
@@ -183,22 +169,26 @@
   /* Base frosted panel — cards, modals, nav bars */
   .glass {
     background-color: var(--glass-bg);
-    -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur-md))
+      saturate(var(--glass-saturate));
     backdrop-filter: blur(var(--glass-blur-md)) saturate(var(--glass-saturate));
-     box-shadow:
+    box-shadow:
       0 1px 0 0 var(--glass-highlight) inset,
       0 8px 32px 0 var(--glass-shadow);
-
-  
   }
- .glass:hover{
-  scale: 1.1;
-  transition: 1s;
- }
+  .glass:hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+  .glass-no-scale:hover {
+    scale: none;
+    transition: none;
+  }
   /* More opaque variant — for text-heavy surfaces needing contrast */
   .glass-strong {
     background-color: var(--glass-bg-strong);
-    -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur-lg))
+      saturate(var(--glass-saturate));
     backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-xl);
@@ -210,7 +200,8 @@
   /* Subtle variant — thin blur for chips, toolbars, floating pills */
   .glass-subtle {
     background-color: var(--glass-bg);
-    -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur-sm))
+      saturate(var(--glass-saturate));
     backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
@@ -219,20 +210,38 @@
   /* Glass button — tactile, brand-tinted on hover */
   .btn-glass {
     background-color: var(--glass-bg);
-    -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur-sm))
+      saturate(var(--glass-saturate));
     backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     box-shadow: 0 1px 0 0 var(--glass-highlight) inset;
     color: var(--color-fg);
-    transition: background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+    transition:
+      background-color 150ms ease,
+      box-shadow 150ms ease,
+      transform 150ms ease;
   }
   .btn-glass:hover {
-    background-color: color-mix(in srgb, var(--color-accent) 18%, var(--glass-bg));
-    box-shadow: 0 1px 0 0 var(--glass-highlight) inset, 0 4px 16px 0 var(--glass-shadow);
+    background-color: color-mix(
+      in srgb,
+      var(--color-accent) 18%,
+      var(--glass-bg)
+    );
+    box-shadow:
+      0 1px 0 0 var(--glass-highlight) inset,
+      0 4px 16px 0 var(--glass-shadow);
   }
   .btn-glass:active {
     transform: scale(0.98);
+  }
+
+  .cta-button {
+    transition: box-shadow 150ms ease;
+  }
+  .cta-button:hover {
+    box-shadow: 0 4px 16px
+      color-mix(in srgb, var(--color-brand-500) 45%, transparent);
   }
 }
 
@@ -326,10 +335,11 @@
   }
 
   .text-link-scroll {
-    color: 'black';
+    color: "black";
     text-underline-offset: 2px;
   }
-  .text-link:hover,.text-link-scroll:hover  {
+  .text-link:hover,
+  .text-link-scroll:hover {
     color: var(--color-accent-hover);
     text-decoration-color: currentColor;
     transition: 1s;
@@ -345,14 +355,16 @@
     padding: 0.1em 0.4em;
     color: var(--color-fg);
   }
-  
-  .hero-image{
+
+  .hero-image {
     background-size: cover;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)), url('/src/assets/image/max-duzij-qAjJk-un3BI-unsplash.jpg');
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)),
+      url("/src/assets/image/max-duzij-qAjJk-un3BI-unsplash.jpg");
   }
 
-  .section-image{
+  .section-image {
     background-size: cover;
-    background-image: url('/src/assets/image/stock-video-premium-abstract.jpg');
+    background-image: url("/src/assets/image/stock-video-premium-abstract.jpg");
   }
 }
