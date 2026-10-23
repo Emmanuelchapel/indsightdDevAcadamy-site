@@ -12,7 +12,7 @@ export const register = async (full_name, email, phone_number) => {
     // call in the fetch method
    try {
 
-     const response = await fetch(`https://insightdevacadamy-git-main-chapels-projects.vercel.app/api/v1/registrations/register`, {
+     const response = await fetch(`${baseUrl}/api/v1/registrations/register`, {
         method: 'POST',
         headers: {
            "Content-Type": "application/json"
