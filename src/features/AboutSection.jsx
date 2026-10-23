@@ -1,4 +1,6 @@
 
+import bootcampImage from "../assets/image/a2ce593e-5bbd-40e2-9172-456308334ea6.svg";
+
 const AboutSection = () => {
     return (
         <>
@@ -22,7 +24,7 @@ const AboutSection = () => {
                         {/* Left - Image */}
                         <div className="w-full md:w-1/2 flex justify-center">
                             <img
-                                src="/src/assets/image/a2ce593e-5bbd-40e2-9172-456308334ea6.svg"
+                                src={bootcampImage}
                                 alt="Web Development Bootcamp"
                                 className=" w-[500px] h-[500px] object-contain"
                             />

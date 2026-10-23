@@ -1,5 +1,8 @@
 
 import { useEffect } from "react";
+import closeIcon from "../assets/icon/Vector.png";
+import successIcon from "../assets/icon/success_icon.svg";
+import errorIcon from "../assets/icon/error-icon.svg";
 
 
 const Toast = ({
@@ -50,7 +53,7 @@ const Toast = ({
           "
         >
           <img
-            src="/src/assets/icon/Vector.png"
+            src={closeIcon}
             alt="Close"
             className="h-[7px] w-[7px]"
           />
@@ -61,13 +64,13 @@ const Toast = ({
           {/* Status icon */}
           {type === "Success" ? (
             <img
-              src="/src/assets/icon/success_icon.svg"
+              src={successIcon}
               alt="Success"
               className="h-[18px] w-[18px] shrink-0"
             />
           ) : (
             <img
-              src="/src/assets/icon/error-icon.svg"
+              src={errorIcon}
               alt="Error"
               className="h-[18px] w-[18px] shrink-0"
             />

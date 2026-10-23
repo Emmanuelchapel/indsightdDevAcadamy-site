@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrowDownIcon from "../assets/icon/arrow-down.svg";
 
 const FQAmenu = ({ questions = [], width, height}) => {
   // state to holde a boolean value
@@ -36,7 +37,7 @@ const FQAmenu = ({ questions = [], width, height}) => {
                   }}
                 >
                   <img
-                    src="/src/assets/icon/arrow-down.svg"
+                    src={arrowDownIcon}
                     alt="drop down icon"
                   />
                 </div>

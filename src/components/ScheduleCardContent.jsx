@@ -1,3 +1,5 @@
+import codingIcon from "../assets/icon/icons8-laptop-coding-48.png";
+
 const ScheduleIcon = ({ label }) => {
   const normalizedLabel = label.toLowerCase();
   const iconClassName = "w-7 h-7 text-white";
@@ -50,7 +52,7 @@ const ScheduleIcon = ({ label }) => {
   return (
     <img
       className="w-7 h-7"
-      src="/src/assets/icon/icons8-laptop-coding-48.png"
+      src={codingIcon}
       alt=""
       aria-hidden="true"
     />

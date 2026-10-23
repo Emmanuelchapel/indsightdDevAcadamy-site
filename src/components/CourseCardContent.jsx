@@ -1,3 +1,5 @@
+import codingIcon from "../assets/icon/icons8-laptop-coding-48.png";
+
 const CourseCardIcon = ({ course }) => {
   const title = course.toLowerCase();
   const iconClassName = "w-7 h-7 text-white";
@@ -58,7 +60,7 @@ const CourseCardIcon = ({ course }) => {
   return (
     <img
       className="w-7 h-7"
-      src="/src/assets/icon/icons8-laptop-coding-48.png"
+      src={codingIcon}
       alt=""
       aria-hidden="true"
     />

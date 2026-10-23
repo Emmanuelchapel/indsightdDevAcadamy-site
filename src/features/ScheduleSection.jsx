@@ -3,6 +3,7 @@ import { scheduleCards } from "../data/data";
 import SheduleCardContent from "../components/ScheduleCardContent";
 import Button from "../ui/Button";
 import { useModal } from "../context/ModalContext";
+import bootcampImage from "../assets/image/a2ce593e-5bbd-40e2-9172-456308334ea6.svg";
 
 const ScheduleSection = () => {
   // call in the modal hook
@@ -27,7 +28,7 @@ const ScheduleSection = () => {
 
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/src/assets/image/a2ce593e-5bbd-40e2-9172-456308334ea6.svg"
+                src={bootcampImage}
                 alt="Web Development Bootcamp"
                 className=" w-[500px] h-[500px] object-contain"
               />

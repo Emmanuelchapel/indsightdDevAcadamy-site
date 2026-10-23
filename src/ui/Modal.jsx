@@ -1,4 +1,5 @@
 import { useModal } from "../context/ModalContext";
+import closeIcon from "../assets/icon/Vector.png";
 
 const Modal = ({ width, height, modal, children, header, description }) => {
   const { closeModal } = useModal();
@@ -28,7 +29,7 @@ const Modal = ({ width, height, modal, children, header, description }) => {
             onClick={() => closeModal("Register")}
             width="9px"
             height="9px"
-            src="/src/assets/icon/Vector.png"
+            src={closeIcon}
           />
         ) : null}
       </div>

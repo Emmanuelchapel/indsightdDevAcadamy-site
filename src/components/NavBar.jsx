@@ -1,6 +1,8 @@
 
 import { useEffect, useState } from "react";
 import Wrapper from "./Wrapper";
+import closeIcon from "../assets/icon/Vector.png";
+import menuIcon from "../assets/icon/sort.svg";
 
 const NavBar = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -100,7 +102,7 @@ const NavBar = () => {
               <img
                 onClick={() => setIsopen(false)}
                 className="cursor-pointer"
-                src="/src/assets/icon/Vector.png"
+                src={closeIcon}
                 width={20}
                 height={20}
                 alt="Close menu"
@@ -218,7 +220,7 @@ const NavBar = () => {
           <img
             onClick={() => setIsopen(true)}
             className="cursor-pointer sm:hidden"
-            src="/src/assets/icon/sort.svg"
+            src={menuIcon}
             width={40}
             height={40}
             alt="Open menu"

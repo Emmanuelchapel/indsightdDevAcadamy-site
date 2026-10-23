@@ -360,11 +360,11 @@
     background-size: cover;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)),
-      url("/src/assets/image/max-duzij-qAjJk-un3BI-unsplash.jpg");
+      url("./assets/image/max-duzij-qAjJk-un3BI-unsplash.jpg");
   }
 
   .section-image {
     background-size: cover;
-    background-image: url("/src/assets/image/stock-video-premium-abstract.jpg");
+    background-image: url("./assets/image/stock-video-premium-abstract.jpg");
   }
 }
